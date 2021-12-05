@@ -16,7 +16,6 @@ public:
     bool searchWord(string word);
     bool deleteWord(string word);
     bool updateWord(string oldWord, string newWord);
-
     //vector<string, int> getDictionary();
 };
 
