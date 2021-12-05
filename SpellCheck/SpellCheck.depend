@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1638640297 source:d:\advaith\academic\vit\sem4\cse3003-os\spellpad project\spellcheck\tries.cpp
+	"tries.h"
+
+1638640023 d:\advaith\academic\vit\sem4\cse3003-os\spellpad project\spellcheck\tries.h
+	<iostream>
+	<vector>
+
+1638640329 source:d:\advaith\academic\vit\sem4\cse3003-os\spellpad project\spellcheck\main.cpp
+	"tries.h"
+
