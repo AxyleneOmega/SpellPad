@@ -50,7 +50,7 @@ root = Tk()
 root.title('SpellCheck Notepad')
 root.resizable(0, 0)
 
-#creating scrollable notepad window
+#creating scrollable notepad
 notepad = ScrolledText(root, width = 90, height = 40)
 fileName = ''
 
