@@ -1,17 +1,22 @@
 import tkinter as tk
+from tkinter import *
+from tkinter.ttk import *
+from datetime import datetime
+from tkinter import messagebox
+from tkinter import filedialog,simpledialog
+from tkinter.scrolledtext import ScrolledText
+from typing import Tuple
 import tkinter.font as tkFont
 import os
 
 class App(tk.Tk):
     def __init__(self):
-        tk.Tk.__init__(self)
-
+        tk.Tk.__init__(self, className=" SpellCheck Text Processor")
         ## Toolbar
         self.toolbar = tk.Frame()
-        self.bold = tk.Button(name="toolbar", text="bold", 
-                              borderwidth=1)
-        self.bold.pack(in_=self.toolbar, side="left")
-
+        #self.bold = tk.Button(name="toolbar", text="bold", borderwidth=1)
+        #self.bold.pack(in_=self.toolbar, side="left")
+        
         ## Main part of the GUI
         # I'll use a frame to contain the widget and 
         # scrollbar; it looks a little nicer that way...
@@ -54,7 +59,6 @@ class App(tk.Tk):
             self.text.tag_remove("misspelled", index, "%s+%dc" % (index, len(word)))
         else:
             self.text.tag_add("misspelled", index, "%s+%dc" % (index, len(word)))
-
 
 if __name__ == "__main__":
     app=App()
